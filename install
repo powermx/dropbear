@@ -27,7 +27,7 @@ case $opcao in
 1)
 clear
 echo ""
-tput setaf 2 ; tput bold ; echo "Instalando Dropbear" ; tput sgr0
+echo "Instalando Dropbear"
 sleep 2
 
 apt-get install dropbear 1>/dev/null 2>/dev/null
@@ -58,11 +58,8 @@ echo "$(tput bold) DROPBEAR CONFIGURADO. $(tput sgr0)"
 2)
 clear
 echo ""
-tput setaf 2 ; tput bold ; echo "Dropbear PowerMX" ; tput sgr0
+tput setaf 2 ; tput bold ; echo "Instalando Dropbear" ; tput sgr0
 sleep 2
-
-yum update -y 1>/dev/null 2>/dev/null
-yum upgrade -y 1>/dev/null 2>/dev/null
 
 rpm -Uvh http://ftp-stud.hs-esslingen.de/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm 1>/dev/null 2>/dev/null 
 
@@ -85,17 +82,15 @@ systemctl restart dropbear.service 1>/dev/null 2>/dev/null
 
 echo "porta $port adicionada"
 
-echo "$(tput bold) DROPBEAR CONFIGURADO. $(tput sgr0)"
+echo "DROPBEAR CONFIGURADO"
 
 ;;
 
 3)
 clear
 echo ""
-tput setaf 2 ; tput bold ; echo "Dropbear" ; tput sgr0
+echo "Instalando Dropbear"
 sleep 2
-yum update -y 1>/dev/null 2>/dev/null
-yum upgrade -y 1>/dev/null 2>/dev/null
 
 rpm -Uvh http://ftp-stud.hs-esslingen.de/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
@@ -116,7 +111,7 @@ service dropbear restart 1>/dev/null 2>/dev/null
 
 echo "puerto $port agregado"
 
-echo "$(tput bold) DROPBEAR CONFIGURADO. $(tput sgr0)"
+echo "DROPBEAR CONFIGURADO."
 
 ;;
 
