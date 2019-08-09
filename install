@@ -2,9 +2,9 @@
 clear
 echo ""
 
-tput setaf 2 ; tput bold ; echo "DROPBEAR: ALTERNATIVO" ; tput sgr0
+echo "INSTALADOR DROPBEAR: ALTERNATIVO"
 
-echo "$(tput bold) ESCOGE UNA DISTRIBUCION: $(tput sgr0)"
+echo "ESCOGE UNA DISTRIBUCION:"
 
 echo ""
 
