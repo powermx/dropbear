@@ -28,7 +28,6 @@ case $opcao in
 clear
 echo ""
 echo "Instalando Dropbear"
-sleep 2
 
 apt-get install dropbear -y
 
