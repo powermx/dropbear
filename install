@@ -27,9 +27,8 @@ case $opcao in
 1)
 clear
 echo ""
-tput setaf 2 ; tput bold ; echo "Dropbear" ; tput sgr0
+tput setaf 2 ; tput bold ; echo "Instalando Dropbear" ; tput sgr0
 sleep 2
-apt-get update 1>/dev/null 2>/dev/null
 
 apt-get install dropbear 1>/dev/null 2>/dev/null
 
